@@ -31,7 +31,7 @@ class CreateCarSpecificationUseCase {
 
     carExists.specifications = specifications;
 
-    await this.specificationsRepository.create(carExists);
+    await this.carsRepository.create(carExists);
 
     return carExists;
   }
